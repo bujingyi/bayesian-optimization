@@ -6,6 +6,9 @@ from sklearn.gaussian_process.kernels import *
 
 
 class BayesianOptimizer:
+    """
+    Bayseian Optimizer for hyperparameter optimization
+    """
     def __init__(
             self,
             func,
@@ -26,10 +29,8 @@ class BayesianOptimizer:
         """
         Initializer with initial points and estimate the GPR landscape
         :param func: objective function to optimize
-        :param float_param_ranges: float parameters' ranges. Dictionary {'param_name': range}, range is a tuple of shape
-            (low, high)
-        :param int_param_candidates: integer parameters' candidates. Dictionary {'param_name': candidate}, candidate is
-            a list
+        :param float_param_ranges: float parameters' ranges. Dictionary {'param_name': range}, range is a tuple of shape (low, high)
+        :param int_param_candidates: integer parameters' candidates. Dictionary {'param_name': candidate}, candidate is a list
         :param n_init_points: number of initial points to sample to fit GPR
         :param external_init_points: dictionary of param and list of values, {p1:[pc1,pc2,...], p2:[pc1,pc2,...], ...}
         :param max_iter: max number of iterations
