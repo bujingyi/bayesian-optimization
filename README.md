@@ -6,12 +6,24 @@ Among variaous hyperparameter optimization methods, **`Bayesian Optimization`** 
 
 If we take the hyperparameters as inputs of some real-valued function, the loss of the well trained model under these hyperparameters as the output of that function, then the problem becomes a optimization problem and the best hyperparameter combination is the minimizer of the real-valued function. However we don't know anything about the objective function. All we can do is throw a set of hyperparameter and get a loss (after the model is trained). The objective function is a black box to us.
 
-### 2. Unkown Objective Function
-Since the objective function is unknown, the Bayesian strategy is to treat it as a random function and place a `prior distribution` over it. The `prior` is an assumption we made about the function. It captures our beliefs about the behaviour of the function. Each trial of the evaluation of a set of hyperparameter is also an evaluation of the function. After gathering the function evaluations, the `prior` is updated to form the `posterior distribution` over the unknown objective function. The more function evaluations, the more information we know about the function, and the closer we get to the best hyperparameter combinations. Before continuing, we need to answer two questions:
+### 2. Unknown Objective Function
+Since the objective function is unknown, the Bayesian strategy is to treat it as a `random function` and place a `prior distribution` over it. The `prior` is an assumption we made about the function. It captures our beliefs about the behaviour of the function. Each trial of the evaluation of a set of hyperparameter is also an evaluation of the function. After gathering the function evaluations, the `prior` is updated to form the `posterior distribution` over the unknown objective function. The more function evaluations, the more information we know about the function, and the closer we get to the best hyperparameter combinations. Before continuing, we need to answer two questions:
 
-* What is a distribution of a function?  
-* How to perform function evaluation?
+* *What is a `prior` or `posterior` distribution of a random function?*  
+* *How to perform function evaluation?*
 
 We will figure them out in the next two sections respectively.
 
 ### 3. Stochastic Process - Distribution of Random Functions
+>In probability theory and related fields, a stochastic or random process is a mathematical object usually defined as a collection of random variables indexed by some set...
+
+Stochastic process has several interpretations. The most common one is the index set is interpreted as time. Here we will use another interpretatioin - `random function`. 
+>The term random function is also used to refer to a stochastic or random process, because a stochastic process can also be interpreted as a random element in a function space.
+
+Under this interpretation, stochastic process can be regarded as the distribution of a random function. Next is to choose one specific stochastic process as the `prior` distribution of the objective function. In Baysian Optimization, the most wildly used is `Gaussian Process (GP)`. 
+
+#### Gaussian Process
+*TODO: some explanations about GP*
+
+### 4. Function Evaluation - Acquisition Function
+
