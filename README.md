@@ -1,5 +1,5 @@
 # Bayesian Optimization
-**Bayesian optimizer for hyperparameter tuning**
+** *Bayesian optimizer for hyperparameter tuning* **
 
 ### 1. Hyperparameter tunning as a mathematical optimization
 Among variaous hyperparameter optimization methods, **`Bayesian Optimization`** is probably the third famous (top2 are `Grid Search` and `Random Search` beyond doubt). Unlike the searching strategies, `Baysian Optimization` view hyperparameter tunning as a mathematical optimization problem. 
