@@ -14,6 +14,8 @@ Since the objective function is unknown, the Bayesian strategy is to treat it as
 
 We will figure them out in the next two sections respectively.
 
+>There are two major choices that must be made when performing Bayesian optimization. First, one must select a prior over functions that will express assumptions about the function being optimized. Second, we must choose an acquisition function, which is used to construct a utility function from the model posterior, allowing us to determine the next point to evaluate.
+
 ### 3. Stochastic Process - Distribution of Random Functions
 >In probability theory and related fields, a stochastic or random process is a mathematical object usually defined as a collection of random variables indexed by some set...
 
