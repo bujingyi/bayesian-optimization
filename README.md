@@ -33,3 +33,14 @@ We assume that the objective function is drawn from a Gaussian process prior and
 * **Expected Improvement** is to maximize the expected improvement (EI) over the current best.
 * **Upper Confidence Bound** considers the `exploitation vs. exploration tradeoff`. The idea is to exploiting upper confidence bounds to construct acquisition functions that minimize regret over the course of their optimization.
 
+### 5. Let's put everything together - Bayesian optimization procedure
+1. Choose some `prior` distribution over the space of possible objective functions
+2. Combine `prior` and the likelihood to get a `posterior` distributed over the objective function given some evaluations.
+3. Use the `posterior` to decide where to take the next evaluation according to some prechosen acquisition function.
+4. Augment the data (evaluations).
+Iterate between 2 and 4 until converged.
+
+#### Reference
+[Practical Bayesian Optimization of Machine Learning Algorithms](https://arxiv.org/pdf/1206.2944.pdf)
+[Bayesian optimization - Wikipedia](https://en.wikipedia.org/wiki/Bayesian_optimization)
+[Stochastic process - Wikipedia](https://en.wikipedia.org/wiki/Stochastic_process)
