@@ -28,4 +28,8 @@ Under this interpretation, stochastic process can be regarded as the distributio
 *TODO: some explanations about GP*
 
 ### 4. Function Evaluation - Acquisition Function
+We assume that the objective function is drawn from a Gaussian process prior and each hyperparameter combination together with its corresponding loss makes up a sample data. This prior and these data induce a posterior over functions. The acquisition function determines what point should be evaluated next via a proxy optimization, where several different functions have been proposed:
+* **Probability of Improvement** is to maximize the probability of improving over the best current value.
+* **Expected Improvement** is to maximize the expected improvement (EI) over the current best.
+* **Upper Confidence Bound** considers the `exploitation vs. exploration tradeoff`. The idea is to exploiting upper confidence bounds to construct acquisition functions that minimize regret over the course of their optimization.
 
