@@ -41,6 +41,6 @@ We assume that the objective function is drawn from a Gaussian process prior and
 Iterate between 2 and 4 until converged.
 
 #### Reference
-[Practical Bayesian Optimization of Machine Learning Algorithms](https://arxiv.org/pdf/1206.2944.pdf)
-[Bayesian optimization - Wikipedia](https://en.wikipedia.org/wiki/Bayesian_optimization)
+[Practical Bayesian Optimization of Machine Learning Algorithms](https://arxiv.org/pdf/1206.2944.pdf)  
+[Bayesian optimization - Wikipedia](https://en.wikipedia.org/wiki/Bayesian_optimization)  
 [Stochastic process - Wikipedia](https://en.wikipedia.org/wiki/Stochastic_process)
