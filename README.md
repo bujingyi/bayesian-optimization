@@ -38,7 +38,7 @@ Here the mean of each dimension is assumed zero, and the problem is how to choos
 
 **The closer the `xs`, the closer the corresponding `f(x)s`**
 
-Therefore the elements in the covariance matrix are some distance (correlation) measure of `xs`. It is obvious that there two requirements for this covariance matrix: distance measure and oositive semi-definite. Does it remind you of anything? ......The ***Kernel Functions***!
+Therefore the elements in the covariance matrix are some distance (correlation) measure of `xs`. It is obvious that there two requirements for this covariance matrix: distance measure and oositive semi-definite. Does it remind you of anything? ......The `Kernel Functions`!
 
 For example, if we use squared exponential kernel:
 <div align="center">
@@ -68,3 +68,4 @@ Iterate between 2 and 4 until converged.
 [Practical Bayesian Optimization of Machine Learning Algorithms](https://arxiv.org/pdf/1206.2944.pdf)  
 [Bayesian optimization - Wikipedia](https://en.wikipedia.org/wiki/Bayesian_optimization)  
 [Stochastic process - Wikipedia](https://en.wikipedia.org/wiki/Stochastic_process)
+Sorry I cannot find the original source of the images...
