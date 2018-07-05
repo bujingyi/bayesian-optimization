@@ -42,7 +42,7 @@ Therefore the elements in the covariance matrix are some distance (correlation) 
 
 For example, if we use squared exponential kernel:
 <div align="center">
-<img src="https://raw.githubusercontent.com/bujingyi/bayesian-optimization/master/image/gpr_2.png" height="40%" width="40%" >
+<img src="https://raw.githubusercontent.com/bujingyi/bayesian-optimization/master/image/gpr_2.png" height="60%" width="60%" >
 </div>
 
 
