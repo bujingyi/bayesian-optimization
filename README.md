@@ -30,7 +30,9 @@ As we mentioned above, GP is a distribution over a random function. The assumpti
 Now let's introduce the concept of Gaussian Process Regression (GPR). We will see later that the process of Bayesian optimization is built on top of a GPR.
 
 If we only know three values of `f`, `f1`, `f2`, and `f3`. The three values obey a three dimensional multivariate Gaussian distribution:
-
+<div align="center">
+<img src="https://raw.githubusercontent.com/bujingyi/bayesian-optimization/master/image/gpr_1.png" height="70%" width="70%" >
+ </div>
 
 
 *TODO: more explanations about GP...*  
