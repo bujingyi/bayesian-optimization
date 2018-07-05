@@ -25,8 +25,8 @@ Stochastic process has several interpretations. The most common one is the index
 Under this interpretation, stochastic process can be regarded as the distribution of a random function. Next is to choose one specific stochastic process as the `prior` distribution of the objective function. In Baysian Optimization, the most wildly used is `Gaussian Process (GP)`. 
 
 #### Gaussian Process
-*TODO: some explanations about GP...*
-As we mentioned above, GP is a distribution over a random function. The assumption of GP is: for function `f`, all function values `f(x)s` obey a united Gaussian distribution. 
+*TODO: some explanations about GP...*  
+As we mentioned above, GP is a distribution over a random function. The assumption of GP is: for function `f`, all function values `f(x)s` obey a multivariate Gaussian distribution. 
 
 ### 4. Function Evaluation - Acquisition Function
 We assume that the objective function is drawn from a Gaussian process prior and each hyperparameter combination together with its corresponding loss makes up a sample data. This prior and these data induce a posterior over functions. The acquisition function determines what point should be evaluated next via a proxy optimization, where several different functions have been proposed:
