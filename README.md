@@ -67,5 +67,5 @@ Iterate between 2 and 4 until converged.
 #### Reference
 [Practical Bayesian Optimization of Machine Learning Algorithms](https://arxiv.org/pdf/1206.2944.pdf)  
 [Bayesian optimization - Wikipedia](https://en.wikipedia.org/wiki/Bayesian_optimization)  
-[Stochastic process - Wikipedia](https://en.wikipedia.org/wiki/Stochastic_process)
+[Stochastic process - Wikipedia](https://en.wikipedia.org/wiki/Stochastic_process)  
 Sorry I cannot find the original source of the images...
